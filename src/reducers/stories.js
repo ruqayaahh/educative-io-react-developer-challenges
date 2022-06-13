@@ -13,6 +13,11 @@ export const storiesReducer = (state, action) => {
         isError: false,
         data: action.payload,
       };
+    case "EMPTY_STORIES_FOR_NEW_SEARCH":
+      return {
+        ...state,
+        data: action.payload,
+      };
     case "STORIES_FETCH_FAILURE":
       return {
         ...state,

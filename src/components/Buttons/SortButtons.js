@@ -1,6 +1,8 @@
 import React from "react";
 
-export function SortButtons({ buttons, setSortValue, sorts }) {
+export function SortButtons({ setSortValue }) {
+  const buttons = ["Unsorted", "Title", "Author", "Points", "Num of comments"];
+  const sorts = ["none", "title", "author", "points", "num_comments"];
   return (
     <div>
       {buttons.map((button, i) => (
